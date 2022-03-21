@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <meta http-equiv= "Content-Type" content= "text/html; charset= iso-8859-1">
+        <meta http-equiv= "Content-Type" content= "text/html; charset= UTF-8">
+        <meta charset= "UTF-8" />
+        <title>js03_funcao.htm - Somatória com Entrada de dados por Formulário</title>
+
+    </head>
+
+    <body>
+
+        <h3>Somatória de dois números inteiros com Conversão de Dados</h3>
+
+        <!-- Definição da área e dos elementos de um Formulário -->
+        <form name="MeuFormulario" action= "" method= "POST">
+            Entre com o valor 1: <input type= "text" name= "f_n1" ><p></p>
+            Entre com o valor 2: <input type= "text" name= "f_n2" ><p></p> 
+            <input type= "button" name= "btn_somar" value= "Somar" onclick= "soma()" />
+            <input type= "reset" name= "btn_apagar" value= "Apagar" />
+
+        </form>
+
+        <!-- Final da área do formulário -->
+
+        <!-- Definição da linguagem JavaScript -->
+        <script language= "JavaScript">
+            <!--
+            /* Objetivo: Desenvolver um programa JavaScript que faça a leitura de 2 números
+            inteiros, aplique a conversão de valores com parseInt e apresente o resultado da soma
+            entre eles.
+            Entrada de dados por formulário.
+            */
+
+            /* Definição das variáveis */ 
+            var js_n1;
+            var js_n2;
+            var js_soma;
+
+            /* Definição da função soma() para capturar os dados, processar a somatória e a 
+            apresentar o resultado */ 
+            function soma() {
+
+                /* Entrada de dados */ 
+                js_n1 = parseInt(document.MeuFormulario.f_n1.value);
+                js_n2 = parseInt(document.MeuFormulario.f_n2.value);
+
+                /* Processamento de dados */
+                js_soma = js_n1 + js_n2;
+            
+                /* Saída de dados */ 
+                window.alert ('Resultado da somatoria =' + js_soma.toString());
+            
+                }
+                // -->
+        </script> 
+        <!-- Final da área da linguagem do Java -->
+    </body>
+
+</html>

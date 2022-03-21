@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset= "UTF-8" />
+        <title>js04_Condicional Simples</title>
+    </head>
+
+    <body>
+
+        <h3>Utilização da Condicional Simples</h3>
+
+        <script language= "JavaScript">
+            /* Objetivo: desenvolver um programa em JavaScript que faça a leitura de 2 números
+            inteiros e apresente a soma entre eles.
+            */
+
+            /* Definição de variáveis */
+            var js_n1;
+            var js_n2;
+            var js_n3;
+
+            /* Entrada de dados */
+            js_n1 = parseInt(window.prompt ('Informe o primeiro número; ', 'Digite aqui'));
+            js_n2 = parseInt(window.prompt ('Informe o segundo número; ', 'Digite aqui'));
+
+            /* Saída de dados sem classificação */ 
+            document.write ('O primeiro número é: ' + js_n1);
+            document.write ('<br>O segundo número é: ' + js_n2);
+
+            /* Saída de dados com classificação por decisão Condicional Simples */
+            if (js_n1 > js_n2){
+                js_n3 = js_n1;
+                js_n1 = js_n2;
+                js_n2 = js_n3;
+            }
+
+            document.write ('<p><b>Classificação em Ordem Crescente: </b>', + js_n1 + ' e ' + js_n2);
+            
+            //-->
+        </script>
+
+    </body>
+
+</html>

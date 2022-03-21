@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset= "UTF-8" />
+        <title>js04_ifelse.htm - if/else</title>
+    </head>
+
+    <body>
+
+        <h3>Utilização da Condicional Simples</h3>
+
+        <script language= "JavaScript">
+            /* Objetivo: Ler dois valores independentes da ordem que foram digitados e apresentá-los em ordem crescente.
+            Com a utilização da decisão Condicional Composta (if ... else), não há mais necessidade de definir uma terceira variável.
+            */
+
+            /* Definição de variáveis */
+            var js_n1;
+            var js_n2;
+
+            /* Entrada de dados */
+            js_n1 = parseInt(window.prompt ('Informe o primeiro número; ', 'Digite aqui'));
+            js_n2 = parseInt(window.prompt ('Informe o segundo número; ', 'Digite aqui'));
+
+            /* Saída de dados sem classificação */ 
+            document.write ('O primeiro número é: ' + js_n1);
+            document.write ('<br>O segundo número é: ' + js_n2);
+
+            /* Saída de dados com classificação por decisão Condicional Composta (if ... else).*/
+            if (js_n1 < js_n2){
+                document.write ('<p><b>Classificação em Ordem Crescente: </b>', + js_n1 + ' e ' + js_n2);
+            }
+
+            else {
+                document.write ('<p><b>Classificação em Ordem Crescente: </b>', + js_n2 + ' e ' + js_n1);
+                }
+
+
+            //-->
+        </script>
+
+    </body>
+
+</html>
